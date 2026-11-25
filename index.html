@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>One Swipe Switch</title>
+<meta name="description" content="One Swipe Switch is a logic puzzle game for iPhone, currently being prepared for release on the App Store.">
+<style>
+:root{--bg:#07070f;--card:#10101c;--text:#e8e8f4;--muted:#9a9ab5;--cyan:#22e6ff;--pink:#ff3fd2;--line:#23233a}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh;display:flex;flex-direction:column;
+background-image:radial-gradient(circle at 15% 10%,rgba(34,230,255,.12),transparent 40%),radial-gradient(circle at 85% 80%,rgba(255,63,210,.12),transparent 40%)}
+main{flex:1;width:100%;max-width:760px;margin:0 auto;padding:72px 16px 48px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,44px);gap:10px;justify-content:center;margin-bottom:36px}
+.grid span{width:44px;height:44px;border-radius:10px;border:2px solid var(--line);background:var(--card)}
+.grid .on{border-color:var(--cyan);box-shadow:0 0 14px var(--cyan),inset 0 0 10px rgba(34,230,255,.4)}
+.grid .alt{border-color:var(--pink);box-shadow:0 0 14px var(--pink),inset 0 0 10px rgba(255,63,210,.4)}
+h1{font-size:clamp(2.2rem,8vw,3.6rem);line-height:1.1;letter-spacing:-.02em;
+background:linear-gradient(90deg,var(--cyan),var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent;
+filter:drop-shadow(0 0 18px rgba(34,230,255,.35))}
+.tag{margin-top:14px;font-size:1.15rem;color:var(--muted)}
+.card{margin:40px auto 0;max-width:560px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;text-align:left}
+.card h2{font-size:1rem;color:var(--cyan);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.card p+h2{margin-top:20px}
+.status{display:inline-block;margin-top:32px;padding:8px 16px;border-radius:999px;border:1px solid var(--pink);color:var(--pink);font-size:.95rem;box-shadow:0 0 12px rgba(255,63,210,.3)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 16px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<main>
+  <div class="grid" aria-hidden="true">
+    <span class="on"></span><span></span><span class="alt"></span>
+    <span></span><span class="on"></span><span></span>
+    <span class="alt"></span><span></span><span class="on"></span>
+  </div>
+  <h1>One Swipe Switch</h1>
+  <p class="tag">A logic puzzle game for iPhone.</p>
+  <div class="card">
+    <h2>The game</h2>
+    <p>One swipe moves every dot on a 5&times;5 board one step in the same direction. Walls and edges block the way and dots never overlap. Guide each dot to its own goal at the same time, in as few moves as you can. 1000 campaign levels, a Daily Challenge, and play offline without an account.</p>
+    <h2>Status</h2>
+    <p>One Swipe Switch is being prepared for release on the App Store.</p>
+  </div>
+  <span class="status">Coming soon to the App Store</span>
+</main>
+<footer>&copy; 2026 One Swipe Switch</footer>
+</body>
+</html>
